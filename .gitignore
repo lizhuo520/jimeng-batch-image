@@ -1,0 +1,37 @@
+# 登录态（绝对不提交）
+data/profile/
+data/profile_backup_*/
+*.sqlite
+*.sqlite-journal
+cookies*.json
+
+# 生成的图片
+data/outputs/
+data/artifacts/
+data/live/
+submit-template.json
+
+# 账本与日志
+data/jobs.jsonl
+data/*.log
+data/live-daemon.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本地临时
+*.tmp
+*.bak
+*.old
