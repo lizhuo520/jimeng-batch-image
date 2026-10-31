@@ -123,8 +123,9 @@
           if cand == cur_count or cand in tried: continue
           if select_count(page, cand): break
   ```
-- **验证方法**：`python cli.py setting --count 2` 或看 `run` 日志里的 `档位: … / 2张`，
-  以及 `[submit] 同步 UI 设置 → … gen_count=2`。三者对得上才算真的生效。
+- **验证方法**：`python cli.py setting --apply --count 2`（会真的把页面切到 2 张并回读确认），
+  或看 `run` 日志里的 `档位: … / 2张`，以及 `[submit] 同步 UI 设置 → … gen_count=2`。
+  三者对得上才算真的生效。
 - **注意**：`Seedream 3.x` 张数锁死为 1、没有张数下拉，那是模型限制不是 bug，降级逻辑会兜住。
 
 ### 2.11 大批量时「智能比例」尺寸不一致，混在一批里很乱

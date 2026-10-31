@@ -77,6 +77,7 @@ python cli.py run prompts.txt --headless --pipeline 4
 | `python cli.py run prompts.txt` | 跑一批 |
 | `python cli.py credit` | 查真实剩余积分（**零成本**） |
 | `python cli.py setting` | 只看档位不提交 |
+| `python cli.py setting --apply` | 切到默认档位（4.7 / 2K / 智能比例 / 1张）并回读确认 |
 | `python cli.py check` | 检查登录态 |
 | `python cli.py status` | 看批次状态 |
 | `python cli.py resume --batch <id>` | 断点续跑 |
