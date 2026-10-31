@@ -135,3 +135,19 @@
 - **机制**：`智能比例` 由服务端逐条按提示词语义算构图，所以同一批不同提示词可能得到不同比例。
 - **解决**：如果一批图需要尺寸统一（排版、网页、画册），**必须显式传 `--ratio`**。
   用户明确说「竖构图 / 横图 / 壁纸 / 海报」时同样必须显式传，不能依赖默认值。
+
+---
+
+## 附：仓库迁移记录
+
+本技能自 v1.3.1 起，`~/.dsh/skills/jimeng-batch-image` 目录本身就是 git 仓库，
+远端为 <https://github.com/lizhuo520/jimeng-batch-image>。
+
+改完技能后直接在技能目录内提交推送即可，不再需要中间副本目录：
+
+```bash
+cd ~/.dsh/skills/jimeng-batch-image
+git status
+git diff
+git add -A && git commit -m "fix: ..." && git push
+```
